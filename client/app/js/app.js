@@ -5,5 +5,11 @@ app.config(function($routeProvider, $locationProvider){
     .when('/', {
       templateUrl: 'partials/home.html',
       controller: 'HomeController'
+    })
+    .when('/login', {
+      templateUrl: 'partials/login.html',
+      controller: 'LoginController'
     });
+
+  //$locationProvider.html5Mode(true);
 });

@@ -1,0 +1,13 @@
+.container-fluid
+  .row
+    .col-md-4
+
+      h3 Log in to Poop Already
+
+      form
+        p: input(type='text' name='username' ng-model='login.username' placeholder='username')
+        p: input(type='password' name='password' ng-model='login.password' placeholder='password')
+        p: button.btn.btn-default(ng-click='userlogin()') Log in
+        //- TODO: password reset form
+        p #[a(href='#') I forgot my password]
+        p New to Poop Already? #[a(href='/signup') Sign up]

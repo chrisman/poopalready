@@ -3,18 +3,19 @@ nav.navbar.navbar-default
     .navbar-header
       button.navbar-toggle.collapsed(data-toggle="collapse" data-target="#mynavbar" aria-expanded="false")
         i.fa.fa-bars
-      a.navbar-brand(href="#")
-        img(alt="Brand" src="assets/images/brand.png" width="50" height="50")
+      a.navbar-brand(href="/#/")
+        img(alt="Brand" src="assets/images/brand.png" width="50" height="50") 
+        span Poop Already!
     
     #mynavbar.collapse.navbar-collapse
       ul.nav.navbar-nav
         li
-          a(href="#") about
+          a(href="/#/about") About
         li
-          a(href="#") contact
-        li
-          a(href="#") more
+          a(href="/#/contact") Contact
 
-.page-header
-  h1 poop already!
-    small number 2
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href='/#/signin') Sign In
+        li
+          a(href='/#/login') Log In
