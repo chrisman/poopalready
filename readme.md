@@ -12,7 +12,7 @@ User can invite other users to be co-walkers/co-owners of their dog.
 
 * [front end deployment](https://numbertwo.firebaseapp.com/)
 
-* [back end deployment](https://damp-forest-20439.herokuapp.com/)
+* [back end deployment](https://poopalready.herokuapp.com/)
 
 * [issue tracker](https://waffle.io/chrisman/poopalready)
 
