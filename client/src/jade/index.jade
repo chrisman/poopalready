@@ -1,0 +1,12 @@
+html(ng-app='chrisbrown')
+  head
+    title poop already
+    include includes/style_block
+
+  body(ng-controller='MainController')
+    h1 pooper {{ 6 + 3 }}
+    h3 {{ greeting }}
+
+    ng-view
+
+    include includes/script_block
