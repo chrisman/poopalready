@@ -1,1 +1,1 @@
-app.controller("MainController",["$scope",function(e){e.greeting="hey hi howdy hey"}]);
+app.controller("HomeController",["$scope","LoginService",function(o,e){o.login={},o.userlogin=function(){console.log("Hello from HomeController")},console.log(e.test())}]),app.controller("MainController",["$scope",function(o){o.greeting="hey hi howdy hey"}]);

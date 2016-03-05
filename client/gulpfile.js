@@ -15,6 +15,13 @@ gulp.task('controllers', () => {
     .pipe(gulp.dest('app/js'));
 });
 
+gulp.task('services', () => {
+  return gulp.src('src/js/services/**/*.js')
+    .pipe(concat('services.js'))
+    .pipe(minify())
+    .pipe(gulp.dest('app/js'));
+});
+
 gulp.task('sass', () => {
   return gulp.src('src/sass/**/*.sass')
     .pipe(sass())
@@ -23,7 +30,12 @@ gulp.task('sass', () => {
 });
 
 gulp.task('html', () => {
-  return gulp.src(['src/jade/**/*.jade', '!src/jade/includes/*'])
+  return gulp.src([
+    'src/jade/**/*.jade',
+    'src/jade/partials/**/*.jade',
+    'src/jade/templates/**/*.jade',
+    '!src/jade/includes/*'
+  ])
     .pipe(jade({
       pretty: true
     }))
@@ -38,6 +50,7 @@ gulp.task('watcher', () => {
     gulp.watch('app/index.html', sync.reload)
   })
   gulp.watch('src/js/controllers/**/*.js', ['controllers']);
+  gulp.watch('src/js/services/**/*.js', ['services']);
   gulp.watch('src/jade/**/*.jade', ['html']);
   gulp.watch('src/sass/**/*.sass', ['sass']);
   reload.listen()
@@ -45,4 +58,4 @@ gulp.task('watcher', () => {
   gulp.watch(['app/*']).on('change', reload.changed)
 });
 
-gulp.task('default', ['html', 'controllers', 'sass', 'watcher']);
+gulp.task('default', ['html', 'controllers', 'services', 'sass', 'watcher']);

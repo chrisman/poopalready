@@ -4,6 +4,7 @@ The number two dog-walk tracker in the world.
 
 ## Overview
 
+__use case__
 A user can create a profile, create a dog, create a new walk with that dog, and indicate whether there was a #2 or not. Walk stats are generated for the dog.
 
 User can invite other users to be co-walkers/co-owners of their dog.

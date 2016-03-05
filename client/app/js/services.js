@@ -1,0 +1,1 @@
+app.service("LoginService",function(){var e="Testing log in service";return{test:function(){return e}}});
