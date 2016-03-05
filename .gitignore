@@ -1,0 +1,3 @@
+.env
+client/app/vendor
+node_modules

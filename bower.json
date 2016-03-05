@@ -1,0 +1,31 @@
+{
+  "name": "poop already",
+  "authors": [
+    "Christopher Brown <christopher.p.brown@gmail.com>"
+  ],
+  "description": "dog walking app",
+  "main": "",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests",
+    "app/vendor",
+    "client/public/vendor"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.0",
+    "font-awesome": "fontawesome#^4.5.0",
+    "jquery-touchswipe": "^1.6.15"
+  }
+}
